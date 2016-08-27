@@ -12,20 +12,20 @@ source:
     {{ checktype }}: {{ checksum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - cairo
     - libsigcpp
-    - libpng
+    - libpng >=1.6.21,<1.7
     - pkg-config
     - toolchain
   run:
     - cairo
     - libsigcpp
-    - libpng
+    - libpng >=1.6.21,<1.7
 
 test:
     commands:
