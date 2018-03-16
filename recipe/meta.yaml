@@ -1,5 +1,5 @@
-{% set version = "1.12.0" %}
-{% set checksum = "5a09a3f604cec2ddb4dfcace28dbe74a53585585" %}
+{% set version = "1.12.2" %}
+{% set checksum = "621546f32221a2ddc079167a13ce5b5409bed704" %}
 {% set checktype = "sha1" %}
 
 package:
@@ -12,7 +12,7 @@ source:
     {{ checktype }}: {{ checksum }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
 
 requirements:
