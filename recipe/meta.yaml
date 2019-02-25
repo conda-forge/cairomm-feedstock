@@ -17,15 +17,35 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ cdt('xorg-x11-proto-devel') }}
+    - {{ cdt('libx11-devel') }}
+    - {{ cdt('libxrender-devel') }}
+    - {{ cdt('libxext-devel') }}
+    - {{ cdt('libxau-devel') }}
+    # Build tools
+    - m4
+    - autoconf
+    - automake
+    - pkg-config
+    - libtool
+    - make
+  host:
     - cairo
     - libsigcpp
-    - libpng >=1.6.23,<1.7
-    - pkg-config
-    - toolchain
+    - libpng
+    - zlib
+    - freetype
   run:
     - cairo
     - libsigcpp
-    - libpng >=1.6.23,<1.7
+    - libpng
+    - zlib
+    - xorg-libxext
+    - xorg-libxrender
+    - xorg-libx11
+    - freetype
 
 test:
     commands:
