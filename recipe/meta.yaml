@@ -17,7 +17,7 @@ build:
 
 outputs:
   - name: cairomm-{{ abi_version }}
-    script: build_libsigcpp.sh
+    script: build_cairomm.sh
     build:
       run_exports:
         - cairomm-{{ abi_version }} >={{ version }}
