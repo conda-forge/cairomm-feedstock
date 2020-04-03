@@ -1,13 +1,9 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About cairomm
 =============
 
 Home: http://cairographics.org/
 
-Package license: LGPL 2.1 and MPL 1.1
+Package license: LGPL-2.1-or-later and MPL-1.1
 
 Feedstock license: BSD 3-Clause
 
@@ -18,9 +14,53 @@ Summary: cairomm is a C++ wrapper for the cairo graphics library
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cairomm-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cairomm-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/cairomm-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cairomm-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+<table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3779&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cairomm-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3779&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cairomm-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3779&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cairomm-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>Windows</td>
+    <td>
+      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
+    </td>
+  </tr>
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -28,6 +68,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cairomm-green.svg)](https://anaconda.org/conda-forge/cairomm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cairomm.svg)](https://anaconda.org/conda-forge/cairomm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cairomm.svg)](https://anaconda.org/conda-forge/cairomm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cairomm.svg)](https://anaconda.org/conda-forge/cairomm) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cairomm--1.0-green.svg)](https://anaconda.org/conda-forge/cairomm-1.0) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cairomm-1.0.svg)](https://anaconda.org/conda-forge/cairomm-1.0) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cairomm-1.0.svg)](https://anaconda.org/conda-forge/cairomm-1.0) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cairomm-1.0.svg)](https://anaconda.org/conda-forge/cairomm-1.0) |
 
 Installing cairomm
 ==================
@@ -38,10 +79,10 @@ Installing `cairomm` from the `conda-forge` channel can be achieved by adding `c
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `cairomm` can be installed with:
+Once the `conda-forge` channel has been enabled, `cairomm, cairomm-1.0` can be installed with:
 
 ```
-conda install cairomm
+conda install cairomm cairomm-1.0
 ```
 
 It is possible to list all of the versions of `cairomm` available on your platform with:
@@ -65,7 +106,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -114,5 +155,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@isuruf](https://github.com/isuruf/)
 * [@vgauthier](https://github.com/vgauthier/)
 
