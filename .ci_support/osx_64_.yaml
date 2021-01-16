@@ -12,6 +12,8 @@ cxx_compiler_version:
 - '11'
 freetype:
 - '2'
+glib:
+- '2.66'
 libpng:
 - '1.6'
 macos_machine:

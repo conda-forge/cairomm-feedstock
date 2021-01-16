@@ -31,6 +31,7 @@ outputs:
         - zlib
         - freetype
         # These requirements can be found in configure.ac
+        - glib
         - cairo
         - sigcpp-2.0  >=2.5.1
       run_constrained:
