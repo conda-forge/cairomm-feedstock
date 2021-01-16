@@ -10,7 +10,7 @@ source:
   sha256: 45c47fd4d0aa77464a75cdca011143fea3ef795c4753f6e860057da5fb8bd599
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   run_exports:
     - cairomm-{{ abi_version }} >={{ version }}
@@ -31,7 +31,8 @@ outputs:
         - zlib
         - freetype
         # These requirements can be found in configure.ac
-        - cairo >=1.10.0
+        - glib
+        - cairo
         - sigcpp-2.0  >=2.5.1
       run_constrained:
         - cairomm {{ version }}
