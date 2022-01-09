@@ -1,4 +1,4 @@
-{% set version = "1.12.2" %}
+{% set version = "1.15.5" %}
 {% set abi_version = "1.0" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://www.cairographics.org/releases/cairomm-{{ version }}.tar.gz
-  sha256: 45c47fd4d0aa77464a75cdca011143fea3ef795c4753f6e860057da5fb8bd599
+  sha256: 8db629f44378cac62b4931f725520334024e62c1951c4396682f1add63c1e3d1
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
   run_exports:
     - cairomm-{{ abi_version }} >={{ version }}
@@ -53,7 +53,7 @@ about:
   home: http://cairographics.org/
   license: LGPL-2.1-or-later and MPL-1.1
   license_file: COPYING
-  summary: "cairomm is a C++ wrapper for the cairo graphics library"
+  summary: cairomm is a C++ wrapper for the cairo graphics library
 
 extra:
   recipe-maintainers:
