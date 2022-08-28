@@ -1,8 +1,9 @@
 setlocal EnableExtensions EnableDelayedExpansion
 @echo on
 
+pkg-config --cflags sigc++-2.0
+
 :: meson options
-:: (set pkg_config_path so deps in host env can be found)
 set ^"MESON_OPTIONS=^
   --prefix="%LIBRARY_PREFIX%" ^
   --wrap-mode=nofallback ^
