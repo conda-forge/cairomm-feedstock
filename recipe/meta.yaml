@@ -26,6 +26,7 @@ outputs:
         - {{ compiler('cxx') }}
         - meson
         - ninja
+        - pkg-config
       host:
         - cairo  >=1.12.0
         - sigcpp-2.0  >=2.6.0
