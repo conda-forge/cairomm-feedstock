@@ -37,9 +37,16 @@ outputs:
       run_constrained:
         - cairomm {{ version }}
     test:
+      requires:
+        - pkg-config
+        - glib
+        - zlib
+        - freetype
+        - libpng
       commands:
         - test -f ${PREFIX}/lib/libcairomm-{{ abi_version }}${SHLIB_EXT}  # [unix]
-        - if not exist %LIBRARY_BIN%\\cairomm-{{ abi_version }}-0.dll exit 1  # [win]
+        - if not exist %LIBRARY_BIN%\\cairomm-vc142-{{ abi_version }}-1.dll exit 1  # [win]
+        - pkg-config --exact-version {{ version }} cairomm-{{ abi_version }}
 
   - name: cairomm
     requirements:
