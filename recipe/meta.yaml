@@ -30,6 +30,7 @@ outputs:
       host:
         - cairo  >=1.12.0
         - sigcpp-2.0  >=2.6.0
+        - glib
       run_constrained:
         - cairomm {{ version }}
     test:
