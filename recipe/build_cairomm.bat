@@ -1,7 +1,8 @@
 setlocal EnableExtensions EnableDelayedExpansion
 @echo on
 
-pkg-config --cflags sigc++-2.0
+:: set pkg-config path so that host deps can be found
+set "PKG_CONFIG_PATH=%LIBRARY_LIB%\pkgconfig;%LIBRARY_PREFIX%\share\pkgconfig"
 
 :: meson options
 set ^"MESON_OPTIONS=^
