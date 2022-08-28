@@ -1,11 +1,8 @@
-# Get an updated config.sub and config.guess
-cp ${BUILD_PREFIX}/share/gnuconfig/config.* build
+#!/usr/bin/env bash
+set -ex
 
-./configure --prefix=${PREFIX} \
-            --enable-static=yes \
-            --enable-shared=yes \
-|| { cat config.log; exit 1; }
+meson ${MESON_ARGS} --prefix="${PREFIX}" -Dlibdir=lib builddir .
 
-make
-make check
-make install
+ninja -C builddir -j${CPU_COUNT}
+ninja -C builddir test
+ninja -C builddir install
