@@ -8,7 +8,22 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '14'
+freetype:
+- '2'
+glib:
+- '2'
+libpng:
+- '1.6'
 macos_machine:
 - arm64-apple-darwin20.0.0
+pin_run_as_build:
+  freetype:
+    max_pin: x
+  libpng:
+    max_pin: x.x
+  zlib:
+    max_pin: x.x
 target_platform:
 - osx-arm64
+zlib:
+- '1.2'
