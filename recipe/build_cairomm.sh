@@ -1,11 +1,11 @@
-# Get an updated config.sub and config.guess
-cp ${BUILD_PREFIX}/share/gnuconfig/config.* build
+#!/usr/bin/env bash
+set -ex
 
-./configure --prefix=${PREFIX} \
-            --enable-static=yes \
-            --enable-shared=yes \
-|| { cat config.log; exit 1; }
+# get meson to find pkg-config when cross compiling
+export PKG_CONFIG=$BUILD_PREFIX/bin/pkg-config
 
-make
-make check
-make install
+meson ${MESON_ARGS} --wrap-mode=nofallback --buildtype=release --prefix="${PREFIX}" -Dlibdir=lib builddir .
+
+ninja -C builddir -j${CPU_COUNT}
+ninja -C builddir test
+ninja -C builddir install
