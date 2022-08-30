@@ -1,5 +1,5 @@
 {% set version = "1.16.1" %}
-{% set abi_version = "1.0" %}
+{% set abi_version = "1.16" %}
 
 package:
   name: cairomm
@@ -29,7 +29,7 @@ outputs:
         - pkg-config
       host:
         - cairo  >=1.12.0
-        - sigcpp-2.0  >=2.6.0
+        - sigcpp-3.0
         - glib
         - zlib
         - freetype
