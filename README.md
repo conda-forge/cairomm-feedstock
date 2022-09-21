@@ -68,7 +68,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cairomm-green.svg)](https://anaconda.org/conda-forge/cairomm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cairomm.svg)](https://anaconda.org/conda-forge/cairomm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cairomm.svg)](https://anaconda.org/conda-forge/cairomm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cairomm.svg)](https://anaconda.org/conda-forge/cairomm) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-cairomm--1.0-green.svg)](https://anaconda.org/conda-forge/cairomm-1.0) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cairomm-1.0.svg)](https://anaconda.org/conda-forge/cairomm-1.0) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cairomm-1.0.svg)](https://anaconda.org/conda-forge/cairomm-1.0) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cairomm-1.0.svg)](https://anaconda.org/conda-forge/cairomm-1.0) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cairomm--1.16-green.svg)](https://anaconda.org/conda-forge/cairomm-1.16) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cairomm-1.16.svg)](https://anaconda.org/conda-forge/cairomm-1.16) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cairomm-1.16.svg)](https://anaconda.org/conda-forge/cairomm-1.16) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cairomm-1.16.svg)](https://anaconda.org/conda-forge/cairomm-1.16) |
 
 Installing cairomm
 ==================
@@ -80,16 +80,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cairomm, cairomm-1.0` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `cairomm, cairomm-1.16` can be installed with `conda`:
 
 ```
-conda install cairomm cairomm-1.0
+conda install cairomm cairomm-1.16
 ```
 
 or with `mamba`:
 
 ```
-mamba install cairomm cairomm-1.0
+mamba install cairomm cairomm-1.16
 ```
 
 It is possible to list all of the versions of `cairomm` available on your platform with `conda`:
