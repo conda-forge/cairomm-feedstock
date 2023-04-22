@@ -10,7 +10,7 @@ source:
   sha256: 4749d25a2b2ef67cc0c014caaf5c87fa46792fc4b3ede186fb0fc932d2055158
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - cairomm-{{ abi_version }} >={{ version }}
 
