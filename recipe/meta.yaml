@@ -1,4 +1,4 @@
-{% set version = "1.16.2" %}
+{% set version = "1.19.0" %}
 {% set abi_version = "1.16" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://www.cairographics.org/releases/cairomm-{{ version }}.tar.xz
-  sha256: 6a63bf98a97dda2b0f55e34d1b5f3fb909ef8b70f9b8d382cb1ff3978e7dc13f
+  sha256: 8b14f03a0e5178c7ff8f7b288cb342a61711c84c9fbed6e663442cfcc873ce5b
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - cairomm-{{ abi_version }} >={{ version }}
 
@@ -24,6 +24,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
         - meson
         - ninja
         - pkg-config
